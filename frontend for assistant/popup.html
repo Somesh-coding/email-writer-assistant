@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Writer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    select, button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #result {
+      white-space: pre-wrap;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Email Reply Generator</h2>
+  <textarea id="emailContent" placeholder="Paste the email here..."></textarea>
+  <select id="tone">
+    <option value="formal">Formal</option>
+    <option value="polite">Polite</option>
+    <option value="friendly">Friendly</option>
+  </select>
+  <button id="generate">Generate Reply</button>
+  <h4>Generated Reply:</h4>
+  <div id="result">Your reply will appear here.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
